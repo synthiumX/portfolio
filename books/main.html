@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Le seigneur des anneaux</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background: #fafafa;
+            margin: 0; padding: 0;
+            color: #2c2c2c;
+        }
+        header, footer {
+            background: #e3d9c1;
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header table, nav table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        header img {
+            height: 140px;
+            width: auto;
+            object-fit: contain;
+        }
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin: 0;
+            color: #4a3f35;
+            text-shadow: 1px 1px 3px #cbbf9f;
+        }
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        nav ul > li {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.2em;
+        }
+        nav ul ul {
+            margin-top: 0.2em;
+            margin-left: 1.2em;
+            font-weight: normal;
+            font-size: 0.95rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #6a5639;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #a07c4e;
+        }
+        nav td {
+            vertical-align: top;
+            padding-right: 2em;
+        }
+        h2 {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            margin: 2rem 0 1rem;
+            color: #5b4735;
+            text-shadow: 1px 1px 2px #d7c7a8;
+        }
+        table.content-table {
+            margin: 2rem auto;
+            width: 80%;
+            border-spacing: 0 1.5rem;
+        }
+        table.content-table td {
+            vertical-align: top;
+            padding: 0 1.5rem;
+        }
+        table.content-table img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+        }
+        table.content-table tr:nth-child(even) td:first-child {
+            order: 2;
+        }
+        table.content-table tr:nth-child(even) td:last-child {
+            order: 1;
+        }
+        p {
+            line-height: 1.5;
+            color: #4e443e;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #cbbf9f;
+            margin: 3rem auto;
+            width: 60%;
+            box-shadow: 0 1px 2px #fff;
+        }
+        table.media-table {
+            width: 90%;
+            margin: 2rem auto 4rem;
+            border-collapse: collapse;
+            text-align: center;
+            font-weight: bold;
+            color: #5b4735;
+            font-family: 'Cinzel', serif;
+        }
+        table.media-table th {
+            padding-bottom: 0.8rem;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #cbbf9f;
+        }
+        table.media-table td {
+            padding: 1rem 0.5rem;
+        }
+        table.media-table img {
+            max-width: 180px;
+            border-radius: 10px;
+            margin: 0 0.3rem;
+            box-shadow: 1px 1px 8px rgba(0,0,0,0.12);
+        }
+        footer {
+            font-size: 0.9rem;
+            color: #5b4735;
+        }
+        footer h2 {
+            margin-top: 0;
+        }
+        footer form {
+            margin: 1rem auto;
+            width: 300px;
+            text-align: left;
+        }
+        footer input[type="text"], footer textarea {
+            width: 100%;
+            padding: 0.4rem;
+            border: 1px solid #a07c4e;
+            border-radius: 4px;
+            margin: 0.4rem 0 1rem 0;
+            font-family: inherit;
+            font-size: 0.9rem;
+            resize: vertical;
+        }
+        footer input[type="submit"] {
+            background-color: #6a5639;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        footer input[type="submit"]:hover {
+            background-color: #a07c4e;
+        }
+        footer a {
+            display: block;
+            margin-top: 1.5rem;
+            color: #6a5639;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <table>
+        <tr>
+            <td align="left"><img src="pictures/imgSDA/logo.png" alt="Left Image"></td>
+            <td align="center"><h1>Le seigneur des anneaux</h1></td>
+            <td align="right"><img src="pictures/imgSDA/logo.png" alt="Right Image"></td>
+        </tr>
+    </table>
+
+    <nav>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="#livres">Les Livres</a></li>
+                        <ul>
+                            <li><a href="#commun">La communauté de l'anneau</a></li>
+                            <li><a href="#tours">Les deux tours</a></li>
+                            <li><a href="#retour">Le retour du roi</a></li>
+                        </ul>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="#films">Les Films</a></li>
+                        <ul>
+                            <li><a href="#commun">La communauté de l'anneau</a></li>
+                            <li><a href="#tours">Les deux tours</a></li>
+                            <li><a href="#retour">Le retour du roi</a></li>
+                        </ul>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="#medias">Autre médias</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+</header>
+
+<hr>
+
+<section id="livres">
+    <h2>Les Livres</h2>
+
+    <table class="content-table">
+        <tr>
+            <td>
+                <h3 id="commun">La communauté de l'anneau</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                </p>
+            </td>
+            <td><img src="pictures/imgSDA/livre1.jpg" alt="La communauté de l'anneau"></td>
+        </tr>
+    </table>
+
+    <table class="content-table">
+        <tr>
+            <td><img src="pictures/imgSDA/livre2.jpg" alt="Les deux tours"></td>
+            <td>
+                <h3 id="tours">Les deux tours</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="content-table">
+        <tr>
+            <td>
+                <h3 id="retour">Le retour du roi</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                </p>
+            </td>
+            <td><img src="pictures/imgSDA/livre3.jpg" alt="Le retour du roi"></td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="films">
+    <h2>Les Films</h2>
+
+    <table class="content-table">
+        <tr>
+            <td>
+                <h3 id="commun">La communauté de l'anneau</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                </p>
+            </td>
+            <td><img src="pictures/imgSDA/film1.jpg" alt="La communauté de l'anneau Film"></td>
+        </tr>
+    </table>
+
+    <table class="content-table">
+        <tr>
+            <td><img src="pictures/imgSDA/film2.jpg" alt="Les deux tours Film"></td>
+            <td>
+                <h3 id="tours">Les deux tours</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="content-table">
+        <tr>
+            <td>
+                <h3 id="retour">Le retour du roi</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid.
+                </p>
+            </td>
+            <td><img src="pictures/imgSDA/film3.jpg" alt="Le retour du roi Film"></td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="medias">
+    <h2>Autre médias</h2>
+
+    <table class="media-table">
+        <thead>
+            <tr>
+                <th>Les jeux vidéos</th>
+                <th>Les bandes dessinées</th>
+                <th>Les jouets</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="pictures/imgSDA/jeuxvideo1.jpg" alt="JdR"></td>
+                <td><img src="pictures/imgSDA/comics1.jpg" alt="Jeu vidéo"></td>
+                <td><img src="pictures/imgSDA/jouet1.jpg" alt="Figurines"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<footer id="contact">
+    <h2>Contact</h2>
+
+    <form action="/submit_contact" method="post">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+
+        <label for="email">Adresse e-mail</label>
+        <input type="text" id="email" name="email" placeholder="exemple@mail.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</footer>
+
+</body>
+</html>

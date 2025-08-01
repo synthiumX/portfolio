@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Blog – VOGUE</title>
+  <meta name="description" content="Blogartikel zu Fashion, Beauty & Lifestyle" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="main.html">VOGUE</a>
+      <button id="nav-toggle" aria-label="Toggle menu" class="burger">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="margin:3rem 0;">
+      <h1>Latest Posts</h1>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Wiki Report Julian</h3>
+          <p>Viel Zeit investiert, viel gelernt, viele Nerven verbraucht. Ein tiefer Einblick in den Modetrendprozess.</p>
+          <a class="card-link" href="#">Read More</a>
+        </div>
+        <div class="card">
+          <h3>Wiki Report Julia</h3>
+          <p>„Es ist noch kein Meister vom Himmel gefallen.“ – Inspiration und Reflexion über kreatives Wachstum.</p>
+          <a class="card-link" href="#">Read More</a>
+        </div>
+        <div class="card">
+          <h3>Trend Forecast Sommer 2025</h3>
+          <p>Was kommt? Unsere Redaktion gibt dir einen exklusiven Ausblick auf kommende Styles.</p>
+          <a class="card-link" href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-block">
+        <h4>VOGUE</h4>
+        <p>Fashion insights and blog updates.</p>
+      </div>
+    </div>
+     <div class="footer-bottom">
+      © <span id="year"></span> VOGUE. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle?.addEventListener('click', () => {
+      nav?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

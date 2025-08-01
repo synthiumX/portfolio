@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Location – VOGUE</title>
+  <meta name="description" content="Besuche uns im VOGUE Headquarters" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="main.html">VOGUE</a>
+      <button id="nav-toggle" aria-label="Toggle menu" class="burger">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="location.html" class="active">Location</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="margin:3rem 0;">
+      <h1>Our Location</h1>
+      <p class="lead">VOGUE Office New York – komm vorbei oder schau dir an, wo wir arbeiten.</p>
+      <div class="cards-grid" style="align-items:start;">
+        <div class="card">
+          <h3>Adresse</h3>
+          <p>One World Trade Center, New York, NY 10007</p>
+          <p>Vereinigte Staaten</p>
+          <p>Tel.: +12 345678910</p>
+          <p>Office Hours: Fr & Sa 14:00 - 21:00</p>
+        </div>
+        <div class="card">
+          <h3>Karte</h3>
+          <div style="border:1px solid #e6e8ec; border-radius:4px; overflow:hidden;">
+            <iframe loading="lazy" width="100%" height="220"
+              src="https://www.google.com/maps/embed?pb=!1m18!"
+              style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-block">
+        <h4>VOGUE</h4>
+        <p>Come visit us.</p>
+      </div>
+    </div>
+     <div class="footer-bottom">
+      © <span id="year"></span> VOGUE. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle?.addEventListener('click', () => {
+      nav?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

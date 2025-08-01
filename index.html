@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-gray-900 transition-colors duration-300">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Portfolio • Your Name</title>
+  <meta name="description" content="Portfolio of Your Name — projects, about me, and contact." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="icon" href="data:," />
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="antialiased dark:bg-gray-900 dark:text-gray-100">
+  <header class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
+    <div class="text-xl font-semibold">
+      <a href="#" aria-label="Home">Portfolio<span class="text-indigo-600">.</span></a>
+    </div>
+    <nav class="hidden md:flex gap-8 items-center">
+      <a href="#projects" class="hover:text-indigo-500">Projects</a>
+      <a href="#about" class="hover:text-indigo-500">About</a>
+      <button id="theme-toggle" aria-label="Toggle theme" class="p-2 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800">
+        🌙
+      </button>
+    </nav>
+    <div class="md:hidden flex items-center gap-4">
+      <button id="theme-toggle-mobile" aria-label="Toggle theme" class="p-2 rounded-md border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800">
+        🌙
+      </button>
+      <button id="menu-btn" aria-label="Open menu" class="p-2">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-6 space-y-4 max-w-5xl mx-auto">
+    <a href="#projects" class="block">Projects</a>
+    <a href="#about" class="block">About</a>
+  </div>
+
+  <section class="relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 py-20 flex flex-col-reverse lg:flex-row gap-12 items-center">
+      <div class="flex-1">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+          Hi! Welcome to my <span class="text-indigo-600">Portfolio</span>.<br/>
+        
+        </h1>
+        <p class="mt-6 text-lg leading-relaxed max-w-prose">
+          This is an overview of a few projects that showcase my skills in frontend and backend development. 
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#projects" class="inline-block px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow hover:bg-indigo-500 transition">
+            View Projects
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <div class="w-full max-w-sm aspect-square bg-gradient-to-br from-indigo-400 to-purple-500 rounded-2xl flex items-center justify-center text-white font-bold text-xl">
+          Your Photo / Illustration
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold">Selected Projects</h2>
+      <p class="mt-3 text-gray-600 dark:text-gray-300">
+        A few things I've built. Click to explore live demos.
+      </p>
+    </div>
+        <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+               <a href="./faewish/index.html" class="group relative flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition no-underline focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <div class="flex-1">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Faewish</h3>
+        <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+            Wishlist for League of Legends skins.
+        </p>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+        <div class="flex gap-2 text-xs">
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">Angular</span>
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">SpringBoot</span>
+        </div>
+        <div class="flex gap-3">
+            <span class="text-indigo-600 text-sm">View</span>
+        </div>
+        </div>
+        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-transparent group-hover:ring-indigo-500 transition pointer-events-none"></div>
+    </a>
+
+         <a href="./football/main.html" class="group relative flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition no-underline focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <div class="flex-1">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Football Page</h3>
+        <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+            An interactive page showcasing match highlights, stats, and player insights with a clean, responsive layout.
+        </p>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+        <div class="flex gap-2 text-xs">
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">HTML</span>
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">CSS</span>
+        </div>
+        <div class="flex gap-3">
+            <span class="text-indigo-600 text-sm">View</span>
+        </div>
+        </div>
+        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-transparent group-hover:ring-indigo-500 transition pointer-events-none"></div>
+    </a>
+
+    <a href="./books/main.html" class="group relative flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition no-underline focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <div class="flex-1">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Books</h3>
+        <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+            Overview of the Lord of The Rings books and movies with some details.
+        </p>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+        <div class="flex gap-2 text-xs">
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">HTML</span>
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">CSS</span>
+        </div>
+        <div class="flex gap-3">
+            <span class="text-indigo-600 text-sm">View</span>
+        </div>
+        </div>
+        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-transparent group-hover:ring-indigo-500 transition pointer-events-none"></div>
+    </a>
+
+
+     <a href="./vogue/main.html" class="group relative flex flex-col rounded-2xl border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition no-underline focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <div class="flex-1">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100">Vogue</h3>
+        <p class="mt-2 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+            Mock site of fashion magazine Vogue (private project). 
+        </p>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+        <div class="flex gap-2 text-xs">
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">CSS</span>
+                        <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">JS</span>
+            <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">HTML</span>
+        </div>
+        <div class="flex gap-3">
+            <span class="text-indigo-600 text-sm">View</span>
+        </div>
+        </div>
+        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-transparent group-hover:ring-indigo-500 transition pointer-events-none"></div>
+    </a>
+    </div>
+    <div class="mt-12 text-center">
+
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-200 dark:border-gray-700 mt-20">
+    <div class="max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-sm">
+        © <span id="year"></span> All rights reserved.
+      </div>
+      <div class="flex gap-4 text-sm">
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#about" class="hover:underline">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
+    const toggleMobile = document.getElementById('theme-toggle-mobile');
+
+    function setTheme(mode) {
+      if (mode === 'dark') {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+        updateToggleIcons('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+        updateToggleIcons('light');
+      }
+    }
+
+    function updateToggleIcons(current) {
+      const icon = current === 'dark' ? '☀️' : '🌙';
+      if (toggle) toggle.textContent = icon;
+      if (toggleMobile) toggleMobile.textContent = icon;
+    }
+
+    const saved = localStorage.theme;
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+
+    toggle?.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      setTheme(isDark ? 'dark' : 'light');
+    });
+    toggleMobile?.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      setTheme(isDark ? 'dark' : 'light');
+    });
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

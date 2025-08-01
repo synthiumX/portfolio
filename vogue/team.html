@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Team – VOGUE</title>
+  <meta name="description" content="Das Team hinter VOGUE" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="main.html">VOGUE</a>
+      <button id="nav-toggle" aria-label="Toggle menu" class="burger">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="team.html" class="active">Team</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="margin:3rem 0;">
+      <h1>Unser Team</h1>
+      <p class="lead">Die Köpfe und Kreativen hinter VOGUE.</p>
+      <div class="cards-grid">
+        <div class="card">
+          <h3>Julian</h3>
+          <p>Fashion Editor · Storyteller · Trend Scout</p>
+        </div>
+        <div class="card">
+          <h3>Julia</h3>
+          <p>Creative Director · Visual Curator</p>
+        </div>
+        <div class="card">
+          <h3>Anna</h3>
+          <p>Style Consultant · Brand Strategist</p>
+        </div>
+        <div class="card">
+          <h3>Leon</h3>
+          <p>Photography Lead · Image Architect</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-block">
+        <h4>VOGUE</h4>
+        <p>Fashion insights and team behind the scenes.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> VOGUE. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle?.addEventListener('click', () => {
+      nav?.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

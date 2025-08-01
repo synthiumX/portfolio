@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Goal Live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <section class="hero" aria-label="Main showcase">
+      <div class="hero-content">
+        <h1>The Greatest<br>Show on the<br>Earth</h1>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        <div class="hero-actions">
+          <a href="live.html" class="btn redbtn" aria-label="Watch Live">Watch Live &gt;</a>
+          <a href="highlights.html" class="btn whitebtn" aria-label="View Highlights">Highlights</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper" aria-label="Rotating banner images">
+        <img src="images/transparent.png" alt="Banner image background" class="hero-img" id="image0" style="opacity: 0;">
+        <img src="images/BannerImage.png" alt="Current banner" class="hero-img" id="image1" style="opacity: 1;">
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Quick navigation">
+      <div class="panel-card">
+        <a href="page2.html" class="btn whitebtn" aria-label="Upcoming Match">Upcoming Match</a>
+        <a href="groups.html" class="btn whitebtn" aria-label="All Group">All Group</a>
+        <a href="blog.html" class="btn redbtn" aria-label="Blog">Blog</a>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Live transfer news">
+      <a href="blog-post.html" class="card" aria-label="Transfer news: Chelsea in talks over Kimpembe">
+        <div class="card-image">
+          <img src="images/BlogImage.png" alt="Blog image">
+        </div>
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <button class="transfer" aria-label="Transfer tag">Transfer</button>
+            <p style="margin:0;">Transfer Live: Chelsea in talks over Kimpembe transfer</p>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <img src="images/TimeIcon.png" alt="Time icon" style="width:18px; height:18px;">
+              <span>10h</span>
+            </div>
+            <div class="meta-item">
+              <img src="images/ChatIcon.png" alt="Chat icon" style="width:18px; height:18px;">
+              <span>23</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="card" aria-label="Transfer news duplicate">
+        <div class="card-image">
+          <img src="images/BlogImage.png" alt="Blog image">
+        </div>
+        <div class="card-content">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <button class="transfer" aria-label="Transfer tag">Transfer</button>
+            <p style="margin:0;">Transfer Live: Chelsea in talks over Kimpembe transfer</p>
+          </div>
+          <div class="card-meta">
+            <div class="meta-item">
+              <img src="images/TimeIcon.png" alt="Time icon" style="width:18px; height:18px;">
+              <span>10h</span>
+            </div>
+            <div class="meta-item">
+              <img src="images/ChatIcon.png" alt="Chat icon" style="width:18px; height:18px;">
+              <span>23</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </section>
+  </div>
+
+  <footer aria-label="Site footer">
+    <div class="footer-brand">
+      <p style="font-size: 50px; margin:0;">Goal</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <div class="footer-title">Support</div>
+        <a href="contact.html">Contact Us</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-column">
+        <div class="footer-title">Settings</div>
+        <a href="settings.html">Privacy Settings</a>
+        <a href="app.html">Goal App</a>
+        <a href="live.html">Goal Live</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const images = [document.getElementById('image1'), document.getElementById('image0')];
+      let cur = 0;
+      setInterval(() => {
+        const next = (cur + 1) % images.length;
+        images[next].style.transition = 'opacity 1s ease';
+        images[cur].style.transition = 'opacity 1s ease';
+        images[cur].style.opacity = 0;
+        images[next].style.opacity = 1;
+        cur = next;
+      }, 3000);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>VOGUE</title>
+  <meta name="description" content="Fashion Expertise für Jede:n – VOGUE" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">VOGUE</a>
+      <button id="nav-toggle" aria-label="Toggle menu" class="burger">☰</button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Fashion Expertise für Jede:n</h1>
+        <p class="lead">
+          Mode, Beauty, Interior – und mehr. Entdecke den Video of the Month mit Selena Gomez
+          und bleib inspiriert.
+        </p>
+        <div class="buttons">
+          <a class="btn" href="#features">Mehr erfahren</a>
+          <a class="btn outline" href="blog.html">Zum Blog</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <iframe loading="lazy" width="560" height="315"
+          src="https://www.youtube.com/embed/BIS7cwqPTYQ?mute=1"
+          title="Get Ready with Selena Gomez" frameborder="0"
+          allow="autoplay; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="features" class="cards-grid">
+      <div class="card">
+        <div class="card-header">
+          <div class="icon-block">Team</div>
+        </div>
+        <p>Werfen Sie einen Blick hinter die Kulissen und lernen Sie uns kennen!</p>
+        <a class="card-link" href="team.html">Hier</a>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="icon-block">Location</div>
+        </div>
+        <p>Besuche uns in unserem Headquarter und erlebe VOGUE live.</p>
+        <a class="card-link" href="location.html">Hier</a>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="icon-block">Blog</div>
+        </div>
+        <p>Die neuesten Themen rund um Fashion, Beauty & Lifestyle findest du hier.</p>
+        <a class="card-link" href="blog.html">Hier</a>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="icon-block">Gallery</div>
+        </div>
+        <p>Inspiration von Fashionweeks, Editorial Shootings und Trends.</p>
+        <a class="card-link" href="gallery.html">Hier</a>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="reports">
+      <div class="report">
+        <h3>Wiki Report Julian</h3>
+        <p>
+          Viel Zeit investiert, viel gelernt, viele Nerven verbraucht. Julian, 23,...
+        </p>
+        <a class="small-link" href="blog.html">Read More</a>
+      </div>
+      <div class="report">
+        <h3>Wiki Report Julia</h3>
+        <p>
+          „Es ist noch kein Meister vom Himmel gefallen.“ – Unbekannt...
+        </p>
+        <a class="small-link" href="blog.html">Read More</a>
+      </div>
+      <div class="report featured">
+        <div class="featured-content">
+          <img src="images/woman.png" alt="VOGUE News" class="report-img" />
+          <div>
+            <h3>VOGUE News</h3>
+            <p>
+              Wir von VOGUE freuen uns, Ihnen die neuesten Entwicklungen in... vorzustellen.
+            </p>
+            <a class="small-link" href="blog.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div class="footer-block">
+        <h4>Address</h4>
+        <p>VOGUE Office New York</p>
+        <p>One World Trade Center, New York, NY 10007</p>
+        <p>Vereinigte Staaten</p>
+        <p>Tel.: +12 345678910</p>
+        <p>Office Hours: Fr & Sa 14:00 - 21:00</p>
+      </div>
+      <div class="footer-block">
+        <h4>VOGUE</h4>
+        <p>The latest fashion news, beauty coverage, celebrity style, culture reviews, and videos.</p>
+        <div class="social">
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="#">X</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-block">
+        <p>Create your own style. Let it be unique for yourself and yet identifiable for others.</p>
+        <p class="attribution">— Anna Wintour</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> VOGUE. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle?.addEventListener('click', () => {
+      nav?.classList.toggle('open');
+    });
+
+  </script>
+</body>
+</html>
